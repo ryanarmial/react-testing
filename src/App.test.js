@@ -10,7 +10,7 @@ test("App should render", () => {
   const app = render(<Router><App/></Router>);
   expect(app.queryByText(/Welcome/)).toBeInTheDocument();
   expect(app.queryByText(/Your todos/)).not.toBeInTheDocument();
-  expect(app.queryByTestId("link-to-homee")).toBeInTheDocument();
+  expect(app.queryByTestId("link-to-home")).toBeInTheDocument();
   expect(app.queryByTestId("link-to-todos")).toBeInTheDocument();
 });
 
